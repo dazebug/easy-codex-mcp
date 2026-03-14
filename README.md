@@ -11,7 +11,7 @@ Sometimes your AI assistant needs a second opinion. **easy-codex-mcp** bridges t
 - 🔒 **Read-only by design** — Codex runs in sandbox mode. It reads your code but never modifies files or runs commands.
 - 💬 **Conversational** — Start a thread and continue it later with full context preserved.
 - 🔧 **Zero config** — No API keys to manage in your MCP config. Just log in to Codex CLI once.
-- 📁 **File-aware** — Use `@filepath` in prompts to pass file contents directly to Codex.
+
 
 ## Quick Start
 
@@ -69,7 +69,7 @@ Your AI assistant now has two new tools:
 Start a new read-only conversation with Codex.
 
 **Parameters:**
-- `prompt` (required) — What to ask Codex. Use `@filepath` to include file contents.
+- `prompt` (required) — What to ask Codex.
 - `working_directory` (optional) — Directory for Codex to work in.
 
 **Returns:** `{ "thread_id": "...", "response": "..." }`

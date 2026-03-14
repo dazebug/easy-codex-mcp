@@ -91,9 +91,6 @@ def start_new_conversation(prompt: str, working_directory: str | None = None) ->
     3. Generating explanations or documentation drafts for code
     4. Getting refactoring or architecture suggestions
 
-    **File mentions:**
-    Use `@filepath` in the prompt to pass file contents to codex.
-    Example: `@src/main.py analyze the structure of this file`
 
     Args:
         prompt: Prompt to send to codex. Use @filepath to mention files.
@@ -140,9 +137,6 @@ def continue_conversation(thread_id: str, prompt: str, working_directory: str | 
     2. Continuing multi-step analysis on the same codebase
     3. Sending additional requests while maintaining conversation context
 
-    **File mentions:**
-    Use `@filepath` in the prompt to pass file contents to codex.
-    Example: `@src/main.py find bugs in this file`
 
     Args:
         thread_id: thread_id from a previous conversation.
