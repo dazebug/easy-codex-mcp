@@ -1,0 +1,37 @@
+[project]
+name = "easy-codex"
+version = "0.1.0"
+description = "MCP server for conversing with OpenAI Codex CLI — start and resume read-only conversations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.11.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.1",
+    "ruff>=0.8.1",
+]
+
+[tool.uv]
+package = true
+
+[tool.pytest]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+include = ["*.py"]
+line-length = 120
+indent-width = 4
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C"]
+ignore = ["C408", "B024", "E203", "E402", "E501", "E721", "E731", "W293"]
+fixable = ["ALL"]
+
+[project.scripts]
+easy-codex = "easy_codex.server:main"

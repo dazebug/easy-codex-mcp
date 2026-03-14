@@ -1,0 +1,2 @@
+[console_scripts]
+easy-codex = easy_codex.server:main

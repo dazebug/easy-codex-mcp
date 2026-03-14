@@ -1,0 +1,10 @@
+pyproject.toml
+src/easy_codex/__init__.py
+src/easy_codex/server.py
+src/easy_codex.egg-info/PKG-INFO
+src/easy_codex.egg-info/SOURCES.txt
+src/easy_codex.egg-info/dependency_links.txt
+src/easy_codex.egg-info/entry_points.txt
+src/easy_codex.egg-info/requires.txt
+src/easy_codex.egg-info/top_level.txt
+tests/test_easy_codex.py
