@@ -24,7 +24,12 @@ codex login
 
 ### 2. Add to your MCP client
 
-**Claude Code:**
+**Claude Code (recommended):**
+```bash
+claude mcp add easy-codex uvx -- --from git+https://github.com/dazebug/easy-codex-mcp easy-codex
+```
+
+**Claude Desktop** — add to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
@@ -36,17 +41,7 @@ codex login
 }
 ```
 
-**Claude Desktop:**
-```json
-{
-  "mcpServers": {
-    "easy-codex": {
-      "command": "uvx",
-      "args": ["--from", "git+https://github.com/dazebug/easy-codex-mcp", "easy-codex"]
-    }
-  }
-}
-```
+**Other MCP clients** — use the same config format with `uvx` as the command.
 
 ### 3. Use it
 
